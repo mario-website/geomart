@@ -39,7 +39,8 @@ collections:
             default_transformations:
             - fetch_format: auto   
               quality: auto
-              crop: fill
+              crop: scale
+              width: 300
               effect: grayscale
         fields:
           - {label: "Tymczasowa nazwa klucza", name: "templateKey", widget: "hidden", default: "index-page"}
