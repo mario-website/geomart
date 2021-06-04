@@ -34,6 +34,13 @@ collections:
       - file: "src/pages/index.md"
         label: "Landing Page"
         name: "index"
+        media_library:
+          config:
+            default_transformations:
+            - fetch_format: auto   
+              quality: auto
+              crop: fill
+              effect: grayscale
         fields:
           - {label: "Tymczasowa nazwa klucza", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Tytuł, name: title, widget: string}
